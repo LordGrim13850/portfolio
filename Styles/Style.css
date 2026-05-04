@@ -5,76 +5,94 @@
 }
 
 body {
-    font-family: Georgia, sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.6;
+    background-color: #3B7597;
+    color: white;
 }
 
+/* NAVBAR */
 nav {
-    background: #093C5D ;
+    background: #093C5D;
     padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 12px;
     text-decoration: none;
     font-size: 18px;
-}
-
-nav a.active {
-    border-bottom: 2px solid #5DF8D8;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #6FD1D7;
 }
 
+nav a.active {
+    border-bottom: 2px solid #5DF8D8;
+}
+
+/* CONTAINER */
 .container {
-    padding: 40px;  
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
     text-align: center;
 }
 
+/* HERO */
 .hero {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
 
 .hero img {
-    width: 250px;
-    border-radius: 10px;
+    width: 220px;
+    border-radius: 50%;
+    border: 4px solid white;
 }
 
 .hero-text {
     max-width: 500px;
 }
 
-ul {
-    list-style: none;
-    margin-top: 20px;
+/* SECTION TITLE */
+h1 {
+    margin-bottom: 20px;
 }
 
-li {
-    background: #f4f4f4;
-    margin: 10px auto;
-    padding: 10px;
-    max-width: 300px;
-    border-radius: 5px;
+/* CARDS (FOR TECH + CERTS) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
 }
 
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
 footer {
     margin-top: 40px;
     padding: 15px;
-    background: #093C5D ;
-    color: white;
+    background: #093C5D;
     text-align: center;
-}
-
-body {
-    font-family: Georgia, sans-serif;
-    line-height: 1.6;
-    background-color: #3B7597; 
 }
