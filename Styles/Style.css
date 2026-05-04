@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, sans-serif;
     line-height: 1.6;
 }
 
 nav {
-    background: #222;
+    background: #093C5D ;
     padding: 15px;
     text-align: center;
 }
@@ -23,15 +23,15 @@ nav a {
 }
 
 nav a.active {
-    border-bottom: 2px solid rgb(250, 250, 250);
+    border-bottom: 2px solid #5DF8D8;
 }
 
 nav a:hover {
-    color: rgb(0, 238, 255);
+    color: #6FD1D7;
 }
 
 .container {
-    padding: 40px;
+    padding: 40px;  
     text-align: center;
 }
 
@@ -68,7 +68,13 @@ li {
 footer {
     margin-top: 40px;
     padding: 15px;
-    background: #222;
+    background: #093C5D ;
     color: white;
     text-align: center;
+}
+
+body {
+    font-family: Georgia, sans-serif;
+    line-height: 1.6;
+    background-color: #3B7597; 
 }
