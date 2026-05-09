@@ -4,40 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhon Philip Villegas | Web Portfolio</title>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <nav>
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About Me</a>
         <a href="techstack.html">Tech Stack</a>
         <a href="certification.html">Certifications</a>
     </nav>
 
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
 
-    <div class="container">
-
-        <div class="hero">
-            <img src="Images/pfp.jpg" alt="Profile Picture">
-
-            <div class="hero-text">
-                <h1>Hi, I'm Jhon Philip Villegas</h1>
-
-                <p>
-                    Welcome to my personal portfolio website. I am an Aspiring front end developer passionate about
-                    web development and designing websites.
-                </p>
+        <section class="home-hero">
+            <div class="hero">
+                <div class="hero-text">
+                    <img src="Images/pfp.jpg" alt="Profile Picture">
+                    <h2>Hi, I'm Jhon Philip Villegas</h2>
+                    <p>
+                        Welcome to my personal portfolio website.
+                        I am an aspiring front-end developer passionate
+                        about web development and designing websites.
+                    </p>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </section>
 
-    
+
+        
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Jhon Philip Villegas</p>
     </footer>
+
+    <!-- Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+
+    <!-- Your JS -->
+    <script src="scripts/script.js"></script>
 
 </body>
 </html>
