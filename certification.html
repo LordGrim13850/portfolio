@@ -10,37 +10,78 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar-custom">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="techstack.html">Tech Stack</a>
-        <a href="certification.html" class="active">Certifications</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+    
+            <a class="navbar-brand fw-bold" href="#">
+                JPV
+            </a>
+    
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav">
+    
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+    
+                    <a class="nav-link" href="about.html">
+                        About Me
+                    </a>
+    
+                    <a class="nav-link active" href="techstack.html">
+                        Tech Stack
+                    </a>
+    
+                    <a class="nav-link" href="certification.html">
+                        Certifications
+                    </a>
+                </div>
+    
+            </div>
+        </div>
     </nav>
 
-    <h1>Certifications</h1>
+    <h1 class="text-center fw-bold">Certifications</h1>
 
     <section class="cert-container">
     
         <div class="cert-card">
-            <a href="Images/db-cert.png" target="_blank">
-                <img src="images/db-cert.png" alt="Database Certificate">
-            </a>
+            <img src="Images/db-cert.png" 
+                 alt="Database Certificate" 
+                 class="cert-img cert-thumb"
+                 onclick="openModal(this.src)">
         
             <p>Introduction to Modern Database Systems</p>
         
-            <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=6798079284JV" target="_blank" class="verify-btn">
+            <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=6798079284JV" 
+               target="_blank" 
+               class="verify-btn btn btn-primary">
                 Verify Certificate
             </a>
         </div>
-    
+        
         <div class="cert-card">
-            <img src="Images/software-cert.png" alt="Certification 2">  
+            <img src="Images/software-cert.png" 
+                 alt="Software Certificate" 
+                 class="cert-img cert-thumb"
+                 onclick="openModal(this.src)">
+        
             <p>Software Engineering</p>
-
-            <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=9760249764JV" target="_blank" class="verify-btn">
+        
+            <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=9760249764JV" 
+               target="_blank" 
+               class="verify-btn btn btn-primary">
                 Verify Certificate
             </a>
         </div>
@@ -53,6 +94,15 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
-<script src="scripts/script.js"></script></script>
+<script src="scripts/script.js"></script>
+
+<div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+
+    <img class="modal-content" id="modalImg" onclick="event.stopPropagation()">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

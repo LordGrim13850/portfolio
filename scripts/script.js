@@ -6,3 +6,16 @@ anime({
     easing: 'easeOutExpo',
     delay: anime.stagger(200)
 });
+
+function openModal(imgSrc) {
+    const modal = document.getElementById("imgModal");
+
+    modal.classList.add("show");
+    document.getElementById("modalImg").src = imgSrc;
+}
+
+function closeModal() {
+    const modal = document.getElementById("imgModal");
+
+    modal.classList.remove("show");
+}
