@@ -564,24 +564,12 @@ h1 {
     }
 }
 
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    text-align: center;
-
-    padding: 20px;
-
-    background: #093C5D;
-
-    color: white;
-
-    margin-top: auto;
-}
-
 /* Prevent Horizontal Scroll */
 html,
 body {
     overflow-x: hidden;
+}
+
+.headerss {
+    color: white;
 }
